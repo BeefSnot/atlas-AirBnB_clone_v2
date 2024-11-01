@@ -17,6 +17,7 @@ class State(BaseModel, Base):
         cities = relationship("City", backref="state")
     else:
         name = ""
+<<<<<<< HEAD
 
     def __init__(self, *args, **kwargs):
         """initializes state"""
@@ -32,3 +33,6 @@ class State(BaseModel, Base):
                 if city.state_id == self.id:
                     city_list.append(city)
             return city_list
+=======
+    cites = []
+>>>>>>> 049aa541696f7bd5af1773eced538409e445f2ad
